@@ -218,6 +218,47 @@ footer a:hover{
 
 /* fin hero*/
 
+/* inicio Our service*/
+
+main section{
+    padding: 2.125em 1.5em;
+}
+
+main section h2{
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color:var(--colorprincipal);
+}
+
+main section .underline{
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    text-align: center;
+}
+
+main section .underline span{
+    position: absolute;
+    top: -0.4em;
+}
+
+main section .underline hr{
+    border-color: var(--colorprincipal);
+}
+
+
+
+
+
+/* fin Our service*/
+
 /*mediasqueries*/
 @media(min-width: 37.5em){  /* 600 px tablet */
 
