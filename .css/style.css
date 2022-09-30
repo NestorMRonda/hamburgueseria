@@ -253,7 +253,50 @@ main section .underline hr{
     border-color: var(--colorprincipal);
 }
 
+main .grid{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+
+main section .grid article{
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main section article>div .fa-solid{
+    border: 1px solid var(--colorprincipal);
+    padding: 0.75em;
+    color:var(--colorprincipal);
+    font-size: 120%;
+}
+
+main section article h3{
+    font-weight: 700;
+    font-size: 110%;
+    margin: 0.625em 0;
+}
+
+main p{
+    color: #666;
+    line-height: 1.25;
+    font-size: 95%;
+}
+
+main section article p{
+    margin-bottom: 0.5em;
+}
+
+.enlace{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorprincipal);
+}
+
+.fa-truck{
+    transform: rotateY(180deg);
+}
 
 
 
@@ -261,8 +304,20 @@ main section .underline hr{
 
 /*mediasqueries*/
 @media(min-width: 37.5em){  /* 600 px tablet */
+    main section .grid article{
+        width: 50%;
+        border-bottom: none;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin-top: 1em;
+    }
 
+    main section .grid article:last-child{
+        width: 100%;
+    }
 }
+
+
 
 @media(min-width: 48em){  /* 768 px tablet grande o pantalla pequeña */
     header .nav-top a span{
@@ -271,6 +326,10 @@ main section .underline hr{
     
     footer {
         text-align: left;
+    }
+
+    main section .grid :is(article, article:last-child){
+        width: 33.333%;
     }
 
 }
